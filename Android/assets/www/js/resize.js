@@ -2,7 +2,7 @@ var designWidth = 1480;
 var designHeight = 2800; 
 var scaleChange = 1; 
 
-function resize() {
+$( document ).ready(function() {
 	var docWidth = window.outerWidth;
 	var docHeight = window.outerHeight;
 	if (docWidth != designWidth) 
@@ -18,4 +18,4 @@ function resize() {
 			scaleChange = scaleY;
 		}
 	}
-}
+});
