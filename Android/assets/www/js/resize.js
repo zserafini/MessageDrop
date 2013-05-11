@@ -1,5 +1,5 @@
-var designWidth = 480; 
-var designHeight = 800; 
+var designWidth = 1480; 
+var designHeight = 2800; 
 var scaleChange = 1; 
 
 function resize() {
