@@ -47,7 +47,6 @@ body {
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
     top:50%;
@@ -67,6 +66,34 @@ body {
         margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
                                       /* offset horizontal: half of image width and text area width */
     }
+}
+
+#menu {
+	background-color:#f2f2f2;
+    	position:absolute;
+    	top:0%;
+   	width:100%;
+	border-bottom: 1px solid #ccc;
+	list-style: none;
+}
+
+#menu li {
+	float:left;
+}
+
+#menu li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bold;
+	border-right: 1px solid #ccc;
+	color: #069;
+}
+
+#nav li a:hover {
+	color: #c00;
+	background-color: #fff; 
 }
 
 h1 {
