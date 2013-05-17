@@ -49,11 +49,3 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
-
-$("#target").click(function() {
-  document.write("test");
-});
-
-$(document).ready(function() {
-  document.write("test");
-});
