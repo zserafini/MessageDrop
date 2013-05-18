@@ -7,6 +7,7 @@
         <script type="text/javascript" src="cordova-2.7.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript"> app.initialize();</script>
+        <script src="js/jqueryform.js"></script> 
 </head> 
 <body> 
 	<div data-role="page">
@@ -14,20 +15,29 @@
                 <h1>Message Drop</h1>
         </div>
 
-        <div data-role="content">    
-                <p>This is a jquery mobile example</p>    
-        </div>
-
-        <ul data-role="listview" data-inset="true" data-filter="true">
-                <li><a href="#">Received 9 minutes ago</a></li>
-                <li><a href="#">Received at 5:42pm today</a></li>
-                <li><a href="#">Received 3:12pm on May 10th, 2013</a></li>
-        </ul>
-
-        <ul data-role="listview" data-inset="true" data-mini="true" data-filter="false">
-                <li><a href="slider.html">Change Radius of Detection</a></li>
-        </ul>
+        <div data-role="content">
         
+	        <div data-role="fieldcontain">
+			    <fieldset data-role="controlgroup" data-type="horizontal" >
+			         	<input type="radio" name="menu" id="drop" value="drop" checked="checked" />
+			         	<label for="drop">Drop</label>
+			
+			         	<input type="radio" name="menu" id="log" value="log"  />
+			         	<label for="log">Log</label>
+			    </fieldset>
+			</div>
+	            
+	        <form id="newdrop" action="http://ec2-23-22-121-122.compute-1.amazonaws.com/MessageDrop/CreateMessage.php" method="post">
+				<fieldset>
+					<label for="basic">Message:</label>
+	    			<input type="text" name="message" id="basic" value=""  />
+						<input type="submit" value="Drop!" />
+				</fieldset>
+			</form>
+			
+			<div id='sucess'></div>   
+			 	
+        </div>
 	</div>
 </body>
 </html>
