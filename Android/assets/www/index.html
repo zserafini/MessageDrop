@@ -13,28 +13,27 @@
 	<div data-role="page">
 	
         <div data-role="header">
-                <h1>Message Drop</h1>
+        	<h1>Message Drop</h1>
         </div>
 
         <div data-role="content">
         
 	        <div data-role="fieldcontain">
 			    <fieldset data-role="controlgroup" data-type="horizontal" >
-			         	<input type="radio" name="menu" id="drop" value="drop" checked="checked" />
-			         	<label for="drop">Drop</label>
+			    	<input type="radio" name="menu" id="drop" value="drop" checked="checked" />
+			        <label for="drop">Drop</label>
 			
-			         	<input type="radio" name="menu" id="log" value="log" />
-			         	<label for="log">Log</label>
+			        <input type="radio" name="menu" id="log" value="log" />
+			        <label for="log">Log</label>
 			    </fieldset>
 			</div>
 	            
-	        <form id="newdrop" action="http://ec2-23-22-121-122.compute-1.amazonaws.com/MessageDrop/CreateMessage.php" method="post">
-				<fieldset>
-					<label for="basic">Message:</label>
-	    			<input type="text" name="message" id="basic" value=""  />
-						<input type="submit" value="Drop!" />
-				</fieldset>
-			</form> 
+			<fieldset>
+				<label for="basic">Message:</label>
+	    		<input type="text" name="message" id="message" value=""  />
+				<input type="submit" value="Drop!" id="newdrop" />
+			</fieldset>
+			
 			<div id="display"></div>
 			 	
         </div>
